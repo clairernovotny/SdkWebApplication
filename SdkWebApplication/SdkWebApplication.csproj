@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>    
     <TargetFramework>net461</TargetFramework>    
@@ -6,6 +6,7 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <OutputPath>bin\</OutputPath>
+    <OutputType>Library</OutputType>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
@@ -47,15 +48,12 @@
   </ItemGroup>
 
 
-  <ItemGroup>
-    <Content Include="Views\**\*.*" />
-    <Content Include="Scripts\**\*.*" />
-    <Content Include="**\*.cshtml" />
+  <ItemGroup>    
+    <Content Include="Scripts\**\*.*" />    
     <Content Include="Content\**\*.*" />
     <Content Include="fonts\**\*.*" />
 
-    <Content Include="Web.config" />    
-    <Content Include="Web.*.config" DependentUpon="Web.config" />
+    <Content Update="Web.*.config" DependentUpon="Web.config" />
 
     <Content Include="Global.asax" />
     <Compile Update="Global.asax.cs" DependentUpon="Global.asax" />
