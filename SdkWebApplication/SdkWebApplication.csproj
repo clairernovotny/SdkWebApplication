@@ -4,10 +4,9 @@
     <TargetFramework>net461</TargetFramework>    
     <DebugType>full</DebugType>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
     <OutputPath>bin\</OutputPath>
     <OutputType>Library</OutputType>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>    
   </PropertyGroup>
 
   <ItemGroup>
